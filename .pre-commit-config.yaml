@@ -61,7 +61,7 @@ repos:
     hooks:
       - id: tests
         name: run tests
-        entry: poetry run pytest -v --cov rov1
+        entry: poetry run pytest -v --cov .
         files: "test_*"
         verbose: true
         language: system

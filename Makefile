@@ -5,6 +5,10 @@ format: ## Run pre-commit hooks to format code
 	@echo "Formatting ..."
 	 pre-commit run --all-files
 
+precommit: ## Run pre-commit hooks to format code
+	@echo "Formatting ..."
+	 pre-commit run --all-files --hook-stage manual
+
 args ?= -vvv -cov tests
 test: ## Run tests
 	pytest $(args)
